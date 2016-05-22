@@ -1,0 +1,24 @@
+/* Empty. Add your own CSS if you like */
+.family {
+	color: #D73F3A;
+}
+.helper{
+	color: #EC9F9F;
+}
+.col {
+	text-align: center;
+}
+.helperbackground{
+	background-color: #D73F3A;
+	color: #ffffff;
+}
+.familybackground{
+	background-color: #EC9F9F;
+	color: #ffffff;
+}
+.matches{
+	color: #D73F3A;
+}
+.ion-checkmark-round{
+	color: #D73F3A;
+}

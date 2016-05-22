@@ -1,0 +1,78 @@
+<ion-view view-title="step #1 Helper">
+	<div class="tabs tabs-icon-only tabs-color-assertive">
+		<a class="tab-item" href="#/app/home">
+			<i class="icon ion-home"></i>
+		</a>
+		<a class="tab-item active">
+			<i class="icon ion-clipboard"></i>
+		</a>
+		<a class="tab-item">
+			<i class="icon ion-android-happy"></i>
+		</a>
+	</div>
+	<ion-content>
+		<div class="bar bar-header bar-assertive">
+			<h1 class="title">I am</h1>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--<h2 class="title" align="center">I am</h2>-->
+		<div class="row">
+			<div class="col">
+				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-woman">
+					<br>A woman</button>
+			</div>
+			<div class="col">
+				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-man">
+					<br>A man</button>
+			</div>
+		</div>
+		<!--
+		<div class="row">
+			<div class="col">
+				<button ng-click="optionOnStep1()" class="button button-icon icon ion-ios-bolt">
+					<br>A Mom as well</button>
+			</div>
+			<div class="col">
+				<button ng-click="optionOnStep1()" class="button button-icon icon ion-ios-bolt-outline">
+					<br>A Father as well</button>
+			</div>
+		</div>-->
+		<h2 class="title" align="center">Available</h2>
+		<div class="row">
+			<div class="col">
+				<button ng-click="optionOnStep1()"  id="option1" onclick="changeState(this)" class="button button-icon icon ion-ios-pie-outline">
+					<br>Part-time</button>
+			</div>
+			<div class="col">
+				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-circle-outline">
+					<br>Full-time</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-time">
+					<br>Daily</button>
+			</div>
+			<div class="col">
+				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-time-outline">
+					<br>Occasionally</button>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div class="row">
+			<div class="col">
+				<a href="#/app/step2Helper" class="button button-assertive">
+					&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;
+				</a>
+			</div>
+		</div>
+		
+		<br><br><br><br>
+
+	</ion-content>
+</ion-view>

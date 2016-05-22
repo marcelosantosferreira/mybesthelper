@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/plugins/cordova-plugin-console/www/logger.js",
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/gulpfile.js",
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "C:/Users/msfer_000.KEVIN/Desktop/VanHackathon/MyBestHelper.com/Site02/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js"
+    ]
+}

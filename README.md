@@ -1,7 +1,7 @@
 ## Synopsis
 A Mobile App built during a Hackathon (VanHackathon - https://www.vanhack.com/hackathon)
 
-## Built using
+## Built in 13h44 by using
 
 Ionic Framework (with controllers and factories to manipulate any JSON Service)
 

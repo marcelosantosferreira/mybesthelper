@@ -1,3 +1,6 @@
+## Screenshot
+![alt text](screenshot.jpg "MyBestHelper Challenge")
+
 ## Synopsis
 A Mobile App built during a Hackathon (VanHackathon - https://www.vanhack.com/hackathon)
 

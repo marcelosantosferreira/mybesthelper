@@ -1,17 +1,20 @@
-<ion-view view-title="my best helper">
+<ion-view view-title="MyBestHelper.com">
 	<ion-content>
-		<div class="bar bar-header bar-assertive">
-			<h1 class="title">Wich one are you?</h1>
+		<div class="bar bar-header familybackground">
+			<h1 class="title familybackground">Wich one are you?</h1>
 		</div>
 		<br>
 		<br>
-		<br>
-		<div class="row">
-			<div class="col">
-				<a href="#/app/step1Helper" class="button button-icon icon ion-person"><br>I'm a Helper</a>
+
+		<!--<a href="#app/tabs">  TABS TESTING  </a>-->
+		<div class="row familybackground">
+			<div class="col ">
+				<a href="#/app/step1Helper" class="button button-icon icon ion-person familybackground">
+					<br>I'm a Helper</a>
 			</div>
 			<div class="col">
-				<a href="#/app/step1Family" class="button button-icon icon ion-ios-people"><br>I'm a Family</a>
+				<a href="#/app/step1Family" class="button button-icon icon ion-ios-people familybackground">
+					<br>I'm a Family</a>
 			</div>
 		</div>
 
@@ -31,8 +34,6 @@
 		<div align="center">
 			<img src="img/logo.png">
 		</div>
-
-
 		<div class="card_">
 			<div class="_item">
 				<h3 align="center">Found</h3>
@@ -40,44 +41,31 @@
 			<div class="item_">
 				<div class="row">
 					<div class="col">
-						<span class="badge badge-assertive">57</span>
+						<span class="badge badge-assertive">512</span>
 						<h3>helpers in</h3>
 					</div>
-
 				</div>
-				<div class="row">
-					<div class="col">
-						<img src="img/vanmap2.png">
-					</div>
-				</div>
-
 			</div>
-			<!-- HELPERS AVATARS
-			<div class="row">
-				<div class="col">
-					image #1
-				</div>
-				<div class="col">
-					image #2
-				</div>
-			</div>-->
-
-
 		</div>
-		<!--
-		<div class="card">
-			<div class="item familybackground item-text-wrap" id="familyquote">
-				<i class="icon ion-quote"></i> I liked that myBestHelper matched candidates who were a good fit, and who were available at the time I needed.
+
+
+		<div class="row" style="border: 0px solid red; padding:0px;width:100%;height:50%">
+			<div class="col" style="border: 0px solid red; padding:0px;width:100%;height:100%">
+				<!--<img src="img/vanmap.png" style="border: 0px solid red; padding:0px; width: 100%">-->
+				<div ng-show="showGears">
+					<br>
+					<br>
+					<br>
+					<img src="img/gears.gif">
+					<br> {{message}}
+				</div>
+
+				<div id="mapInHome" data-tap-disabled="true"></div>
 			</div>
-
-			<div class="item item-avatar">
-				<img alt="Angela a1d62b8f5f9087f0f297318e6e9c8caba4f8c0a38ac05ed288d156872e0c0c75" class="author-image radius block-left block-spacing margin-right-normal" height="60" src="https://d2zbr4nz5vixd5.cloudfront.net/assets/testimonial/angela-a1d62b8f5f9087f0f297318e6e9c8caba4f8c0a38ac05ed288d156872e0c0c75.jpg" width="60" />
-				<p class="author-name">Angela V.</p>
-				<p class="author-info">Mom Of Three</p>
-			</div>
-
-		</div>-->
-
-
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--<h4 align="center"><a href="#/app/map">See my actual position on entire screen</a></h4>-->
 	</ion-content>
 </ion-view>

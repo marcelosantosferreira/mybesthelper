@@ -1,4 +1,27 @@
-<ion-view view-title="step #3 Family">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,43 +32,48 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<ion-content>
+		<!--
 		<div class="bar bar-header bar-assertive">
 			<h1 class="title">Helper profile</h1>
-		</div>
+		</div>-->
 		<br>
 		<br>
 		<br>
+		<h2 class="title" align="center">The best helper profile</h2>
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-no-smoking">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-no-smoking','Nice if Helper: do not smoke.')" class="button button-icon icon ion-no-smoking">
 					<br>No smoking</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-android-car">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-android-car','Nice if Helper: has own car.')" class="button button-icon icon ion-android-car">
 					<br>Own car</button>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-clock">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-ios-clock','Availability: Full-time.')" class="button button-icon icon ion-ios-clock">
 					<br>Full-time</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-pie-outline">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-ios-pie-outline','Availability: part-time.')" class="button button-icon icon ion-ios-pie-outline">
 					<br>Part-time</button>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-ios-medkit-outline','Nice if Helper: has First-aid knowledge.')" class="button button-icon icon ion-ios-medkit-outline">
+					<br>First-aid know-how</button>
+				<!--
 				<button onclick="changeState(this)" class="button button-icon icon ion-speakerphone">
-					<br>Recommended</button>
+					<br>Recommended</button>-->
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-bolt">
+				<button onclick="changeState(this)" ng-click="optionOnFamilyStep(3,'ion-ios-bolt','Nice if Helper: is able to cook.')" class="button button-icon icon ion-ios-bolt">
 					<br>Able to cook</button>
 			</div>
 		</div>

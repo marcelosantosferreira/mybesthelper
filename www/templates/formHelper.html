@@ -1,4 +1,18 @@
-<ion-view view-title="Last Step">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,25 +23,28 @@
 		<a class="tab-item active">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<ion-content>
-		
+		<!--
 		<div class="bar bar-header bar-assertive">
 			<h1 class="title">Contact Details</h1>
-		</div>
-		<br><br>
+		</div>-->
+		<br>
+		<br>
+		<br>
+		<h2 class="title" align="center">Contact Details</h2>
 		<div class="list">
 			<label class="item item-input">
-				<input type="text" placeholder="First Name">
+				<input type="text" placeholder="First Name" ng-model="profile.firstname">
 			</label>
 			<label class="item item-input">
-				<input type="text" placeholder="Last Name">
+				<input type="text" placeholder="Last Name" ng-model="profile.lastname">
 			</label>
 			<label class="item item-input">
-				<input type="text" placeholder="Email">
+				<input type="text" placeholder="Email" ng-model="profile.email">
 			</label>
 			<label class="item item-input">
-				<input type="text" placeholder="Telephone">
+				<input type="text" placeholder="Telephone" ng-model="profile.phone">
 			</label>
 			<label class="item item-input">
 				<input type="password" placeholder="Password">
@@ -48,7 +65,9 @@
 				<i class="icon ion-checkmark-round"></i><small> We make it easy to apply to jobs - save time and effort.<br></small>
 			</div>
 		</div>
-		<br><br><br>
+		<br>
+		<br>
+		<br>
 
 	</ion-content>
 </ion-view>

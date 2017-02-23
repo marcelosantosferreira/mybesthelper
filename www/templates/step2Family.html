@@ -1,4 +1,27 @@
-<ion-view view-title="step #2 Family">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,27 +32,29 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<ion-content>
+		<!--
 		<div class="bar bar-header bar-assertive">
 		  <h1 class="title">I'm interested in</h1>
-		</div>
+		</div>-->
 		<br><br><br>
+		<h2 class="title" align="center">I'm interested in</h2>
 		<div class="row">
 			<div class="col">
-				<a href="#/app/step3Family" class="button button-icon icon ion-ios-body"><br>Child Care</a>
+				<a href="#/app/step3Family" ng-click="optionOnFamilyStep(2,'ion-ios-body', 'Interested in: Child Care.')" class="button button-icon icon ion-ios-body"><br>Child Care</a>
 			</div>
 			<div class="col">
-				<a href="#/app/step3Family" class="button button-icon icon ion-ios-person-outline"><br>Elder Care</a>
+				<a href="#/app/step3Family" ng-click="optionOnFamilyStep(2,'ion-ios-person-outline', 'Interested in: Elder Care.')" class="button button-icon icon ion-ios-person-outline"><br>Elder Care</a>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
-				<a href="#/app/step3Family" class="button button-icon icon ion-ios-home"><br>Home Care</a>
+				<a href="#/app/step3Family" ng-click="optionOnFamilyStep(2,'ion-ios-home', 'Interested in: Home Care.')" class="button button-icon icon ion-ios-home"><br>Home Care</a>
 			</div>
 			<div class="col">
-				<a href="#/app/step3Family" class="button button-icon icon ion-ios-paw"><br>Pet Care</a>
+				<a href="#/app/step3Family" ng-click="optionOnFamilyStep(2,'ion-ios-paw', 'Interested in: Pet Care.')" class="button button-icon icon ion-ios-paw"><br>Pet Care</a>
 			</div>
 		</div>
 		

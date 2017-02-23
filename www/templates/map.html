@@ -1,0 +1,31 @@
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-earth"></i>
+			</a>
+		</div>
+	</div>
+	<ion-content>
+		<!--<br><br>-->
+		<h2 align="center">My Location</h2>
+		<!--<p>
+			<b>City:</b> {{city}}
+		<br><b>Street:</b> {{street}}
+		<br><b>Country:</b> {{country}}	
+		</p>-->
+		<div ng-show="showGears">
+			<center>
+			<br>
+			<br>
+			<img src="img/gears.gif">
+			<br> {{message}}
+			</center>
+		</div>
+
+		<div id="map" data-tap-disabled="true"></div>
+	</ion-content>
+</ion-view>

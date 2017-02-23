@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelper.services'])
+angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelper.services','ngCordova'])
 
 .run(function ($ionicPlatform) {
 	$ionicPlatform.ready(function () {
@@ -23,6 +23,9 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 })
 
 .config(function ($stateProvider, $urlRouterProvider) {
+	
+	
+	
 	$stateProvider
 
 	.state('app', {
@@ -32,6 +35,14 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		controller: 'AppCtrl'
 	})
 
+	.state('app.tabs', {
+		url: '/tabs',
+		views: {
+			'mainContent': {
+				templateUrl: 'templates/tabs.html'
+			}
+		}
+	})
 	.state('app.home', {
 		url: '/home',
 		views: {
@@ -41,13 +52,21 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 			}
 		}
 	})
-
+	.state('app.map', {
+		url: '/map',
+		views: {
+			'mainContent': {
+				templateUrl: 'templates/map.html',
+				controller: 'MapController'
+			}
+		}
+	})
 	.state('app.step1Helper', {
 		url: '/step1Helper',
 		views: {
 			'mainContent': {
 				templateUrl: 'templates/step1Helper.html',
-				controller: 'Step1HelperController'
+				controller: 'StepsHelperController'
 			}
 		}
 	})
@@ -57,7 +76,7 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		views: {
 			'mainContent': {
 				templateUrl: 'templates/step1Family.html',
-				controller: 'Step1FamilyController'
+				controller: 'StepsFamilyController'
 			}
 		}
 	})
@@ -73,6 +92,17 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		}
 	})
 
+	
+	.state('app.profile', {
+			url: '/profile',
+			views: {
+				'mainContent': {
+					templateUrl: 'templates/profile.html',
+					controller: 'ProfileController'
+				}
+			}
+		})
+	
 	.state('app.message', {
 			url: '/message',
 			views: {
@@ -125,7 +155,8 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 			url: '/step4Helper',
 			views: {
 				'mainContent': {
-					templateUrl: 'templates/step4Helper.html'
+					templateUrl: 'templates/step4Helper.html',
+					controller: 'StepsHelperController'
 				}
 			}
 		})
@@ -142,7 +173,8 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		url: '/step2Helper',
 		views: {
 			'mainContent': {
-				templateUrl: 'templates/step2Helper.html'
+				templateUrl: 'templates/step2Helper.html',
+				controller: 'StepsHelperController'
 			}
 		}
 	})
@@ -151,7 +183,8 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		url: '/step2Family',
 		views: {
 			'mainContent': {
-				templateUrl: 'templates/step2Family.html'
+				templateUrl: 'templates/step2Family.html',
+				controller: 'StepsFamilyController'
 			}
 		}
 	})
@@ -160,7 +193,8 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		url: '/step3Helper',
 		views: {
 			'mainContent': {
-				templateUrl: 'templates/step3Helper.html'
+				templateUrl: 'templates/step3Helper.html',
+				controller: 'StepsHelperController'
 			}
 		}
 	})
@@ -169,7 +203,8 @@ angular.module('mybesthelper', ['ionic', 'mybesthelper.controllers', 'mybesthelp
 		url: '/step3Family',
 		views: {
 			'mainContent': {
-				templateUrl: 'templates/step3Family.html'
+				templateUrl: 'templates/step3Family.html',
+				controller: 'StepsFamilyController'
 			}
 		}
 	})

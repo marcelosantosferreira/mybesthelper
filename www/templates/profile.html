@@ -1,0 +1,82 @@
+<ion-view view-title="My Best Helper">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item active" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<!-- Barra no rodapé -->
+	<div class="tabs">
+		<a class="tab-item active" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item" href="#">
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<ion-content>
+		<!--<div class="bar bar-header bar-assertive">
+			<h1 class="title">I am</h1>
+		</div>-->
+		<br>
+		<br>
+		<br>
+		<h2 class="title" align="center">My Details</h2>
+		<div class="item item-divider" ng-show="(profile.firstname != '')">
+			<b>Name</b>	
+			<p align="left">{{profile.firstname}} {{profile.lastname}}</p>
+		</div>
+		<div class="item item-divider" ng-show="(profile.email != '')">
+			<b>Email</b>
+			<p align="left">{{profile.email}}</p>
+		</div>
+		<div class="item item-divider" ng-show="(profile.phone != '')">
+			<b>Phone</b>
+			<p align="left">{{profile.phone}}</p>
+		</div>
+		<div class="item item-divider" ng-show="(profile.phone != '')">
+			<b>Address:</b>
+			<p align="left">{{profile.address}}</p>
+		</div>
+		<!--
+		<br>
+		<p align="center">
+			{{profile.details}}
+		</p>-->
+
+		<div class="list">
+			<!--
+			<div class="item item-divider">
+				Candy Bars
+			</div>-->
+			<a class="item item-icon-left" href="{{lastNavigation}}" ng-repeat="detail in profile.details">
+				<i ng-class="{{profile.icons[$index]}}"></i>&nbsp;&nbsp;{{detail}}
+			</a>
+			<!--
+			<div class="item" ng-repeat="detail in profile.details">
+				<a ng-class="{{profile.icons[$index]}}" style="width: 10%" href="#">{{detail}}</a>
+			</div>-->
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<a href="{{lastNavigation}}" class="button button-assertive">
+					&nbsp;&nbsp;&nbsp;Go to Options&nbsp;&nbsp;&nbsp;
+				</a>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+	</ion-content>
+</ion-view>

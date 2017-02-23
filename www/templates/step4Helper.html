@@ -1,4 +1,27 @@
-<ion-view view-title="step #3 Helper">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,28 +32,30 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<ion-content>
+		<!--
 		<div class="bar bar-header bar-assertive">
 		  <h1 class="title">Last details...very important</h1>
-		</div>
+		</div>-->
 		<br><br><br>
+		<h2 class="title" align="center">A bit more about you</h2>
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-no-smoking"><br>No-smoker</button>
+				<button onclick="changeState(this)"  ng-click="optionOnHelperStep(4, 'ion-no-smoking', 'Do not smoke')" class="button button-icon icon ion-no-smoking"><br>Don't smoke</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-android-car"><br>Have a car</button>
+				<button onclick="changeState(this)"  ng-click="optionOnHelperStep(4,'ion-android-car', 'Have a car')" class="button button-icon icon ion-android-car"><br>Have a car</button>
 			</div>
 		</div>
 		
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-medkit-outline">
+				<button onclick="changeState(this)"  ng-click="optionOnHelperStep(4,'ion-ios-medkit-outline', 'First-aid know-how')" class="button button-icon icon ion-ios-medkit-outline">
 					<br>First-aid know-how</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-bolt">
+				<button onclick="changeState(this)"  ng-click="optionOnHelperStep(4,'ion-ios-bolt','Able to cook')" class="button button-icon icon ion-ios-bolt">
 					<br>Able to cook</button>
 			</div>
 		</div>

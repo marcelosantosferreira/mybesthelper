@@ -1,4 +1,27 @@
-<ion-view view-title="step #3 Helper">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,42 +32,52 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<ion-content>
+		<!--
 		<div class="bar bar-header bar-assertive">
-		  <h1 class="title">If I could choose I would prefer</h1>
-		</div>
-		<br><br><br>
+			<h1 class="title">If I could choose I would prefer</h1>
+		</div>-->
+		<br>
+		<br>
+		<br>
+		<h2 class="title" align="center">If I could choose<br>I would prefer</h2>
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-beer"><br>Happy Hour</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3,'ion-beer', 'Happy Hour')" class="button button-icon icon ion-beer">
+					<br>Happy Hour</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-pizza"><br>Some pizza</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3,'ion-pizza', 'Some pizza')" class="button button-icon icon ion-pizza">
+					<br>Some pizza</button>
 			</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col">
 				<!--<button class="button button-icon icon ion-wineglass"><br>A good wine</button>-->
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-paper"><br>A book</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3, 'ion-ios-paper', 'A book')" class="button button-icon icon ion-ios-paper">
+					<br>A book</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-bag"><br>Shopping</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3, 'ion-bag', 'Shopping')" class="button button-icon icon ion-bag">
+					<br>Shopping</button>
 			</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-ios-game-controller-b"><br>Video Game</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3,'ion-ios-game-controller-b', 'Video Game')" class="button button-icon icon ion-ios-game-controller-b">
+					<br>Video Game</button>
 			</div>
 			<div class="col">
-				<button onclick="changeState(this)" class="button button-icon icon ion-android-bicycle"><br>Ride my bike</button>
+				<button onclick="changeState(this)" ng-click="optionOnHelperStep(3, 'ion-android-bicycle', 'Ride my bike')" class="button button-icon icon ion-android-bicycle">
+					<br>Ride my bike</button>
 			</div>
 		</div>
-	
+
 		<br>
-		
+
 		<div class="row">
 			<div class="col">
 				<a href="#/app/step4Helper" class="button button-assertive">
@@ -52,7 +85,9 @@
 				</a>
 			</div>
 		</div>
-		
-		<br><br><br>
+
+		<br>
+		<br>
+		<br>
 	</ion-content>
 </ion-view>

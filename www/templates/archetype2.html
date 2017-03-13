@@ -1,4 +1,18 @@
-<ion-view view-title="mybesthelper">
+<ion-view view-title="My Best Helper">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,7 +23,7 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<!--
 	<ion-nav-buttons side="secondary">
 		<div class="buttons">
@@ -18,22 +32,25 @@
 	</ion-nav-buttons>-->
 
 	<ion-content>
+		<br><br><br>
+		<h2 class="title" align="center">You're</h2>
 		<div class="card">
+			<!--
 			<div class="item item-divider">
 				<p align="center"><b>Super Mom</b></p>
-			</div>
+			</div>-->
 			<div class="item item-body item-text-wrap" align="center">
 				<img src="img/archetype2.png">
 				<h1>Super Mom
-                	<span class="badge badge-assertive">43</span></h1>
-				<p align="justify">Mom of two or more...lot of work to do hum?! Things goes crazy, but she's always there to save the kids! 
-					In this case you need a strong helper!
+                	<!--<span class="badge badge-assertive">43</span>-->
+				</h1>
+				<p align="justify">Mom of two or more...lot of work to do hum?! Things goes crazy, but she's always there to save the kids! In this case you need a strong helper!
 					<br>
 					<br>
 				</p>
 			</div>
 			<div class="item item-body item-text-wrap" align="center">
-				<span class="badge badge-assertive">27</span> Helpers to assist you
+				<span class="badge badge-assertive">{{matches}}</span> Helpers to assist you
 			</div>
 		</div>
 		<h2 align="center">Matches</h2>
@@ -45,10 +62,9 @@
 					<img src="img/checked.png">
 					<img src="img/hascar.png">
 					<img src="img/nosmoke.png">
-					<img src="img/secured.png">
-					+4
+					<img src="img/secured.png"> +4
 				</div>
-				 
+
 				<!--<p><b>31</b> times requested</p>-->
 			</a>
 			<a class="item item-avatar" href="#">
@@ -59,7 +75,7 @@
 					<img src="img/nosmoke.png">
 					<img src="img/secured.png">
 					<img src="img/heart.png">
-					
+
 				</div>
 				<!--<p><b>28</b> times requested</p>-->
 			</a>
@@ -83,7 +99,9 @@
 				</a>
 			</div>
 		</div>
-		
-		<br><br><br>
+
+		<br>
+		<br>
+		<br>
 	</ion-content>
 </ion-view>

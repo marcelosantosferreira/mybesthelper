@@ -1,69 +1,108 @@
-<ion-view view-title="step #1 Helper">
-	<div class="tabs tabs-icon-only tabs-color-assertive">
-		<a class="tab-item" href="#/app/home">
-			<i class="icon ion-home"></i>
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<!-- Barra no rodapé -->
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
 		</a>
-		<a class="tab-item active">
-			<i class="icon ion-clipboard"></i>
-		</a>
-		<a class="tab-item">
-			<i class="icon ion-android-happy"></i>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
 		</a>
 	</div>
+	<!--
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item">
+			<h4><b>{{matches}}</b> Matches</h4>
+		</a>-->
+		<!--
+		<a class="tab-item" href="#/app/profile">
+			<i class="icon ion-ios-gear-outline"></i>My profile
+		</a>
+		<a class="tab-item" href="#">
+			<i class="icon ion-ios-search"></i><b>{{matches}}</b> Matches
+		</a>
+-->
+		<!--
+			ion-android-star-outline
+			ion-person-add
+			ion-ribbon-b
+			ion-earth
+			ion-load-a
+			-->
+
+	<!--
+</div>
+	-->
 	<ion-content>
-		<div class="bar bar-header bar-assertive">
+		<!--<div class="bar bar-header bar-assertive">
 			<h1 class="title">I am</h1>
-		</div>
+		</div>-->
 		<br>
 		<br>
 		<br>
-		<!--<h2 class="title" align="center">I am</h2>-->
+		<h2 class="title" align="center">I'm</h2>
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-woman">
+				<button ng-click="optionOnHelperStep(1,'ion-woman', 'Woman')" id="Woman" onclick="changeState(this)" class="button button-icon icon ion-woman">
 					<br>A woman</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-man">
+				<button ng-click="optionOnHelperStep(1,'ion-man', 'Man')" id="Man" onclick="changeState(this)" class="button button-icon icon ion-man">
 					<br>A man</button>
 			</div>
 		</div>
 		<!--
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()" class="button button-icon icon ion-ios-bolt">
+				<button ng-click="optionOnHelperStep()" class="button button-icon icon ion-ios-bolt">
 					<br>A Mom as well</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" class="button button-icon icon ion-ios-bolt-outline">
+				<button ng-click="optionOnHelperStep()" class="button button-icon icon ion-ios-bolt-outline">
 					<br>A Father as well</button>
 			</div>
 		</div>-->
 		<h2 class="title" align="center">Available</h2>
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()"  id="option1" onclick="changeState(this)" class="button button-icon icon ion-ios-pie-outline">
+				<button ng-click="optionOnHelperStep(1,'ion-ios-pie-outline', 'Part-time')" id="Part-time" onclick="changeState(this)" class="button button-icon icon ion-ios-pie-outline">
 					<br>Part-time</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-circle-outline">
+				<button ng-click="optionOnHelperStep(1,'ion-ios-circle-outline', 'Full-time')" id="Full-time" onclick="changeState(this)" class="button button-icon icon ion-ios-circle-outline">
 					<br>Full-time</button>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-time">
+				<button ng-click="optionOnHelperStep(1,'ion-ios-time', 'Daily')" id="Daily" onclick="changeState(this)" class="button button-icon icon ion-ios-time">
 					<br>Daily</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-time-outline">
+				<button ng-click="optionOnHelperStep(1,'ion-ios-time-outline', 'Occasionally')" id="Occasionally" onclick="changeState(this)" class="button button-icon icon ion-ios-time-outline">
 					<br>Occasionally</button>
 			</div>
 		</div>
-		
+
 		<br>
-		
+
 		<div class="row">
 			<div class="col">
 				<a href="#/app/step2Helper" class="button button-assertive">
@@ -71,8 +110,11 @@
 				</a>
 			</div>
 		</div>
-		
-		<br><br><br><br>
+
+		<br>
+		<br>
+		<br>
+		<br>
 
 	</ion-content>
 </ion-view>

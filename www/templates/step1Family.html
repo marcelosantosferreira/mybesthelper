@@ -1,4 +1,27 @@
-<ion-view view-title="step #1 Family">
+<ion-view view-title="MyBestHelper.com">
+	<div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+		<div class="tabs">
+			<a class="tab-item" href="#">
+				<i class="icon ion-home"></i>
+			</a>
+			<a class="tab-item active" href="#">
+				<i class="icon ion-clipboard"></i>
+			</a>
+			<a class="tab-item" href="#">
+				<i class="icon ion-android-happy"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tabs">
+		<a class="tab-item" href="#/app/profile">
+			<h4>My Profile</h4>
+		</a>
+		<a class="tab-item active" href="#">
+			<!--<i class="icon ion-ios-search"></i>-->
+			<h4>Matches <b>{{matches}}</b></h4>
+		</a>
+	</div>
+	<!--
 	<div class="tabs tabs-icon-only tabs-color-assertive">
 		<a class="tab-item" href="#/app/home">
 			<i class="icon ion-home"></i>
@@ -9,7 +32,7 @@
 		<a class="tab-item">
 			<i class="icon ion-android-happy"></i>
 		</a>
-	</div>
+	</div>-->
 	<!--<div class="tabs-striped tabs-background-assertive tabs-color-light">
 		<div class="tabs">
 			<a class="tab-item" href="#/app/home">Home</a>
@@ -18,37 +41,38 @@
 		</div>
 	</div>-->
 	<ion-content>
+		<!--
 		<div class="bar bar-header bar-assertive">
 			<h1 class="title">Your family members</h1>
-		</div>
+		</div>-->
 		<br>
 		<br>
 		<br>
 		<h2 class="title" align="center">Children</h2>
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-ios-body">
+				<button ng-click="optionOnFamilyStep(1,'ion-ios-body','Children? Just One.')" onclick="changeState(this)" class="button button-icon icon ion-ios-body">
 					<br>Just one</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-android-contacts">
+				<button ng-click="optionOnFamilyStep(1,'ion-android-contacts','Children? Two or more.')" onclick="changeState(this)" class="button button-icon icon ion-android-contacts">
 					<br>Two or more</button>
 			</div>
 		</div>
 		<h2 class="title" align="center">Pets</h2>
 		<div class="row">
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-social-github">
+				<button ng-click="optionOnFamilyStep(1,'ion-social-github','Pets? Just One.')" onclick="changeState(this)" class="button button-icon icon ion-social-github">
 					<br>Just one</button>
 			</div>
 			<div class="col">
-				<button ng-click="optionOnStep1()" onclick="changeState(this)" class="button button-icon icon ion-more">
+				<button ng-click="optionOnFamilyStep(1,'ion-more','Pets? Two or more.')" onclick="changeState(this)" class="button button-icon icon ion-more">
 					<br>Two or more</button>
 			</div>
 		</div>
 
 		<br>
-		
+
 		<div class="row">
 			<div class="col">
 				<a href="#/app/step2Family" class="button button-assertive">
@@ -57,7 +81,9 @@
 			</div>
 		</div>
 
-		<br><br><br>
+		<br>
+		<br>
+		<br>
 
 	</ion-content>
 </ion-view>

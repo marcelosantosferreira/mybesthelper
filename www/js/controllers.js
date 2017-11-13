@@ -11,8 +11,8 @@ angular.module('mybesthelper.controllers', [])
 	
 	//console.info('AppCtrl accessed!');
 	
-	//$scope.matches = $localStorage.getObject('matches', 512);
-	$scope.matches = 512;
+	//$scope.matches = $localStorage.getObject('matches', 246);
+	$scope.matches = 346;
 	$scope.userType = "";
 	$scope.loggedAs = function(userType){
 		$scope.userType = userType;
@@ -79,7 +79,7 @@ angular.module('mybesthelper.controllers', [])
 	
 	$scope.city = "city";
 	
-	$scope.showGears = true;
+	//$scope.showGears = true;
 	$scope.message = "Detecting city...";
 	
 	var options = {
@@ -175,7 +175,7 @@ angular.module('mybesthelper.controllers', [])
 			
 		});
 		
-		$scope.showGears = false;
+		//$scope.showGears = false;
 		$scope.message = "";
 	
 	}, function (error) {
@@ -325,8 +325,8 @@ angular.module('mybesthelper.controllers', [])
 	$scope.showHelperInfo = false;
 	$scope.showFamilyInfo = false;
 	$scope.baseURL = baseURL;
-	$scope.showGears = true;
-	$scope.message = "Detecting city...";
+	//$scope.showGears = true;
+	$scope.message = "Your city...";
 	/* Map */
 	
 	var options = {
@@ -335,7 +335,7 @@ angular.module('mybesthelper.controllers', [])
 	};
 	
 	$cordovaGeolocation.getCurrentPosition(options).then(function (position) {
-		console.log("Initing map in home");
+		console.log("Map in home");
 		var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
 		var mapOptions = {
@@ -346,9 +346,7 @@ angular.module('mybesthelper.controllers', [])
 
 		$scope.map = new google.maps.Map(document.getElementById("mapInHome"), mapOptions);
 
-		console.log("Put on div!");
-		
-		
+		console.log("Put on div");
 		
 		//Wait until the map is loaded
 		google.maps.event.addListenerOnce($scope.map, 'idle', function () {
@@ -360,7 +358,7 @@ angular.module('mybesthelper.controllers', [])
 			});
 			console.log("The marker is there!");
 			$scope.message = "";
-			$scope.showGears = false;
+			//$scope.showGears = false;
 		});
 
 		//Wait until the map is loaded
@@ -373,7 +371,7 @@ angular.module('mybesthelper.controllers', [])
 			});
 
 			var infoWindow = new google.maps.InfoWindow({
-				content: "Found 512 Helpers in your city!"
+				content: "Found 246 Helpers in your city!"
 			});
 
 			google.maps.event.addListener(marker, 'click', function () {

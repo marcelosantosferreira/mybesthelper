@@ -1,3 +1,10 @@
+## 5min reading + watching
+Take a look at
+
+https://sites.google.com/view/msferreira-mybesthelper
+
+for Demos and Wireframes
+
 ## Screenshot
 ![alt text](screenshot.jpg "MyBestHelper Challenge")
 

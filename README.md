@@ -1,3 +1,10 @@
+## 5min site about it
+Take a look at
+
+https://sites.google.com/view/msferreira-mybesthelper
+
+for Demos and Wireframes
+
 ## Synopsis
 A Mobile App built during a Hackathon (VanHackathon - https://www.vanhack.com/hackathon)
 
